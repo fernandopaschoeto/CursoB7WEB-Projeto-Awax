@@ -238,10 +238,120 @@ header {
     box-shadow: 0px 5px 10px #333;
 }
 
-.button {
+.section-services {
+    display: flex;
+}
 
+.section-service {
+    flex: 1;
+    text-align: center;
+    border-right: 1px solid #999;
+    padding: 15px;
+}
+
+.section-service:first-child {
+    border-left: 1px solid #999;
 }
 
 
 
+.section-service h4 {
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 18px;
+}
 
+.section-service p {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #999;
+}
+
+.section-projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.section-projects--filters {
+    border: 1px solid #ccc;
+    background-color: #EEE;
+    border-radius: 30px;
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.section-projects--filters ul {
+    display: flex;
+    justify-content: center;
+}
+.section-projects--filters ul li {
+    list-style: none;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 13px;
+    border-left: 1px solid #ccc;
+    border-bottom: 3px solid #eee;
+}
+
+.section-projects--filters li:hover, 
+.section-projects--filters li.active {
+    border-bottom: 3px solid #b28756;
+}
+
+.section-projects--filters ul li:first-child{
+    border-left: 0;
+}
+
+.section-projects--filters ul li a {
+    text-decoration: none;
+    color: #555;
+}
+
+
+.section-projects--photos{
+    width: 100vw;
+    max-width: 1140px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.section-projects--photo{
+    width: 280px;
+}
+
+.section-projects--photoarea {
+    width: 260px;
+    margin: 10px;
+    height: 160px;
+}
+
+.section-projects--photoarea img {
+    width: inherit;
+    height: inherit;
+}
+
+.section-projects--photoinfo {
+    position: absolute;
+    background-color: rgba(0, 0, 0, .6);
+    width: inherit;
+    height: inherit;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+
+}
+
+
+.section-projects--photoinfo h5 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.section-projects--photoarea:hover .section-projects--photoinfo {
+    display: flex;
+}
