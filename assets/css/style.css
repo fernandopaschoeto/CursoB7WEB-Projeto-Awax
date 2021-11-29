@@ -7,6 +7,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 13px;
+    overflow-x: hidden;
 }
 
 header {
@@ -73,6 +74,19 @@ header {
     color: #CCC;
 }
 
+.button {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFF;
+    background-color: #b28756;
+    margin-top: 30px;
+    padding: 8px 30px;
+    border-radius: 18px;
+    font-weight: 600;
+    font-size: 12px;
+}
+
 .banner {
     height: calc(100vh - 100px);
     background-color: #333;
@@ -118,19 +132,6 @@ header {
     margin-top: 20px;
 }
 
-.banner a {
-    display: block;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #FFF;
-    background-color: #b28756;
-    margin-top: 30px;
-    padding: 8px 30px;
-    border-radius: 18px;
-    font-weight: 600;
-    font-size: 12px;
-}
-
 .banner .sliders-pointers {
     width: 100vw;
     height: 20px;
@@ -154,3 +155,93 @@ header {
 .banner .active {
     background-color: #b28756;
 }
+
+.default {
+    padding: 50px 0;
+}
+
+.default .section-title,
+.default .section-desc {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.default .section-title {
+    font-size: 20px;
+}
+
+.default .section-desc {
+    font-size: 10px;
+    color: #CCC;
+    margin: 10px 0 40px 0;
+
+}
+
+.default .section-body {
+    max-width: 1140px;
+    margin: auto;
+
+}
+
+.default.light {
+    background-color: #F7F7F7;
+
+}
+
+.default.light .section-title, 
+.default.light .section-body{
+    color: #000;
+}
+
+.default.dark {
+    background-color: #000000;
+
+}
+
+.default.dark .section-title, 
+.default.dark .section-body {
+    color: #FFF;
+}
+
+
+
+
+
+
+
+
+
+
+/* CSS DE ÁREAS ESPECÍFICAS */
+
+.section-about-us {
+    display: flex;
+}
+
+.section-about-us--left {
+    flex: 1;
+}
+
+.section-about-us--left p {
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.section-about-us--right {
+    text-align: center;
+    width: 520px;
+}
+
+.section-about-us--right img {
+    width: 480px;
+    box-shadow: 0px 5px 10px #333;
+}
+
+.button {
+
+}
+
+
+
+
